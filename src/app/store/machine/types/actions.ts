@@ -252,6 +252,7 @@ export type DeployParams = BaseMachineActionParams & {
   hwe_kernel?: string;
   install_kvm?: boolean;
   osystem?: Machine["osystem"];
+  ephemeral_deploy?: boolean;
   register_vmhost?: boolean;
   user_data?: string;
 };

@@ -135,6 +135,7 @@ export const DeployForm = ({
             distro_series: values.release,
             hwe_kernel: values.kernel,
             osystem: values.oSystem,
+            ephemeral_deploy: true,
             ...(values.enableHwSync && { enable_hw_sync: true }),
             ...(values.vmHostType === PodType.LXD && {
               register_vmhost: true,
@@ -151,6 +152,7 @@ export const DeployForm = ({
                 distro_series: values.release,
                 hwe_kernel: values.kernel,
                 osystem: values.oSystem,
+                ephemeral_deploy: true,
                 system_id: machine.system_id,
                 ...(values.enableHwSync && { enable_hw_sync: true }),
                 ...(values.vmHostType === PodType.LXD && {
